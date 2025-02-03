@@ -98,7 +98,7 @@ a:active {
 
 p{
 	color: white;
-	font-size: 95%;
+	font-size: 75%;
 }
 
 @media screen and (max-width: 1007px) and (min-width: 641px)  /*Mediumkoko 641-1007px*/
@@ -179,7 +179,7 @@ a:active {
 
 p{
 	color: white;
-	font-size: 95%;
+	font-size: 75%;
 }
 
 }
@@ -261,7 +261,7 @@ a:active {
 
 p{
 	color: white;
-	font-size: 95%;
+	font-size: 75%;
 }
 
 }
