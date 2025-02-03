@@ -82,9 +82,6 @@ a:active {
 	background-color: #2D4830;
 }
 
-
-}
-
 .nimi{
 	margin: 10px;
 	border: solid;
@@ -101,7 +98,7 @@ a:active {
 
 p{
 	color: white;
-	font-size: 30px;
+	font-size: 95%;
 }
 
 @media screen and (max-width: 1007px) and (min-width: 641px)  /*Mediumkoko 641-1007px*/
@@ -176,17 +173,13 @@ a:active {
 	color: #2A322B; 
 }
 .kuva{
-	width: auto; 
-	margin: auto;
-	text-align: left;
-	width: 240px;
-	height: 240px;
-	padding: 10px;
+    width: 100%; /* Make images responsive */
+    height: auto;
 }
 
 p{
 	color: white;
-	font-size: 30px;
+	font-size: 95%;
 }
 
 }
@@ -262,22 +255,19 @@ a:active {
 	color: #2A322B; 
 }
 .kuva{
-	width: auto; 
-	margin: auto;
-	text-align: left;
-	width: 240px;
-	height: 240px;
-	padding: 10px;
+    width: 100%; /* Make images responsive */
+    height: auto;
 }
 
 p{
 	color: white;
-	font-size: 30px;
+	font-size: 95%;
 }
 
 }
 
 @media screen and (max-width: 640px) {
+
 
 
   .text {
@@ -290,6 +280,7 @@ p{
   }
 
   p {
-    font-size: 50%;
+    color: white;
+	font-size: 95%;
   }
 }
