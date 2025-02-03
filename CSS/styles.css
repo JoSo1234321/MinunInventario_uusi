@@ -64,7 +64,8 @@ a:active {
 
 .text {
   font-size: 20px;
-  color: white;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
   text-align: center;
 }
 
@@ -268,10 +269,9 @@ p{
 
 @media screen and (max-width: 640px) {
 
-
-
-  .text {
-    font-size: 20px;
+  .container {
+    grid-template-columns: 1fr; /* Single column layout */
+    text-align: center;
   }
 
   .kuva {
@@ -282,5 +282,10 @@ p{
   p {
     color: white;
 	font-size: 75%;
+  }
+  
+    .boxleft {
+    width: 100%; /* Makes box take full width */
+    text-align: center;
   }
 }
