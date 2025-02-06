@@ -22,6 +22,11 @@ table, th, td {
   border-collapse: collapse;
 }
 
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
 h1{
 	color: white;
 }
@@ -93,12 +98,9 @@ a:active {
 	color: #2A322B; 
 }
 .kuva{
-	width: auto; 
-	margin: auto;
-	justify-content:left;
-	width: 240px;
-	height: 240px;
-	padding: 10px;
+  width: 100%;
+  max-width: 240px;
+  height: auto;
 }
 .kuva2{
 	width: auto; 
@@ -285,4 +287,16 @@ p{
 	font-size: 30px;
 }
 
+}
+
+@media screen and (max-width: 640px) { /* Small screens */
+  h1 {
+    font-size: 24px;
+  }
+  .text {
+    font-size: 16px;
+  }
+    .container {
+    grid-template-columns: 1fr; /* Single column on small screens */
+  }
 }
