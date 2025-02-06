@@ -1,0 +1,302 @@
+/* Author: Jonne Soininen */
+/*Date: 8.11.2023*/
+/*Indexstyles*/
+/*Kommentti*/
+
+
+html, body{
+	margin:0;
+	background-color: #40513B;
+	font-family: Arial;
+}
+
+#pageWrapper{
+	background-color: #40513B;
+}
+#headerwrapper{
+	background-color: #2D4830;
+}
+
+table, th, td {
+  border:2px solid black;
+  border-collapse: collapse;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+h1{
+	color: white;
+}
+
+ /* unvisited link */
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: #ADD8E6;
+}
+
+/* mouse over link */
+a:hover {
+  color: blue;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+} 
+
+.center{
+	text-align:center;
+	width: auto;
+	padding-left: 20px;
+}
+
+.linkright{
+
+	text-align:right;
+	width: auto;
+	padding-right: 20px;
+
+}
+
+.boxleft{
+	text-align:left;
+	width: 275px;
+	padding: 10px;
+}
+
+
+.text {
+  font-size: 20px;
+  font-color: white;
+  text-align: center;
+}
+
+.container {
+ display: grid;
+ align-items: center; 
+ grid-template-columns: 1fr 1fr 1fr;
+ column-gap: 5px;
+}
+
+.laatikot{
+	margin: 10px;
+	border: solid;
+	color: #2A322B;
+	background-color: #2D4830;
+}
+
+.nimi{
+	margin: 10px;
+	border: solid;
+	color: #2A322B; 
+}
+.kuva{
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+}
+.kuva2{
+	width: auto; 
+	margin: auto;
+	justify-content:left;
+	width: auto;
+	height: 240px;
+	padding: 10px;
+}
+
+p{
+	color: white;
+	font-size: 30px;
+}
+
+@media screen and (max-width: 1007px) and (min-width: 641px)  /*Mediumkoko 641-1007px*/
+{
+h1{
+	color: white;
+}
+
+ /* unvisited link */
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: #ADD8E6;
+}
+
+/* mouse over link */
+a:hover {
+  color: blue;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+} 
+
+.center{
+	text-align:center;
+	width: auto;
+	padding-left: 20px;
+}
+
+.linkright{
+
+	text-align:right;
+	width: auto;
+	padding-right: 20px;
+
+}
+
+.boxleft{
+	text-align:left;
+	width: 275px;
+	padding: 10px;
+}
+
+.text {
+  font-size: 30px;
+  font-color: white;
+  text-align: center;
+}
+
+.container {
+ display: grid;
+ align-items: center; 
+ grid-template-columns: 1fr 1fr 1fr;
+ column-gap: 5px;
+}
+
+.laatikot{
+	margin: 10px;
+	border: solid;
+	color: #2A322B;
+	background-color: #2D4830;
+}
+
+.nimi{
+	margin: 10px;
+	border: solid;
+	color: #2A322B; 
+}
+.kuva{
+	width: auto; 
+	margin: auto;
+	justify-content:left;
+	width: 240px;
+	height: 240px;
+	padding: 10px;
+}
+
+p{
+	color: white;
+	font-size: 30px;
+}
+
+}
+ @media screen and (min-width: 1008px) /*Iso koko yli 1008px*/
+{
+h1{
+	color: white;
+}
+
+ /* unvisited link */
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: #ADD8E6;
+}
+
+/* mouse over link */
+a:hover {
+  color: blue;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+} 
+
+.center{
+	text-align:center;
+	width: auto;
+	padding-left: 20px;
+}
+
+.linkright{
+
+	text-align:right;
+	width: auto;
+	padding-right: 20px;
+
+}
+
+.boxleft{
+	text-align:left;
+	width: 275px;
+	padding: 10px;
+}
+
+.text {
+  font-size: 50px;
+  font-color: white;
+  text-align: center;
+}
+
+.container {
+ display: grid;
+ align-items: center; 
+ grid-template-columns: 1fr 1fr 1fr;
+ column-gap: 5px;
+}
+
+.laatikot{
+	margin: 10px;
+	border: solid;
+	color: #2A322B;
+	background-color: #2D4830;
+}
+
+.nimi{
+	margin: 10px;
+	border: solid;
+	color: #2A322B; 
+}
+.kuva{
+	width: auto; 
+	margin: auto;
+	justify-content:left;
+	width: 240px;
+	height: 240px;
+	padding: 10px;
+}
+
+p{
+	color: white;
+	font-size: 30px;
+}
+
+}
+
+@media screen and (max-width: 640px) { /* Small screens */
+  h1 {
+    font-size: 24px;
+  }
+  .text {
+    font-size: 16px;
+  }
+    .container {
+    grid-template-columns: 1fr; /* Single column on small screens */
+  }
+}
