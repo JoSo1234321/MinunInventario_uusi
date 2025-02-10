@@ -17,11 +17,6 @@ html, body{
 	background-color: #2D4830;
 }
 
-table, th, td {
-  border:2px solid black;
-  border-collapse: collapse;
-}
-
 h1{
 	color: white;
 }
@@ -69,7 +64,8 @@ a:active {
 
 .text {
   font-size: 20px;
-  font-color: white;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
   text-align: center;
 }
 
@@ -87,34 +83,23 @@ a:active {
 	background-color: #2D4830;
 }
 
-
-}
-
 .nimi{
 	margin: 10px;
 	border: solid;
 	color: #2A322B; 
 }
 .kuva{
-	width: auto; 
+    width: 100%;
+    max-width: 240px;
+    height: auto; 
 	margin: auto;
-	justify-content:left;
-	width: 240px;
-	height: 240px;
-	padding: 10px;
-}
-.kuva2{
-	width: auto; 
-	margin: auto;
-	justify-content:left;
-	width: auto;
-	height: 240px;
+	text-align: left;
 	padding: 10px;
 }
 
 p{
 	color: white;
-	font-size: 30px;
+	font-size: 75%;
 }
 
 @media screen and (max-width: 1007px) and (min-width: 641px)  /*Mediumkoko 641-1007px*/
@@ -189,17 +174,13 @@ a:active {
 	color: #2A322B; 
 }
 .kuva{
-	width: auto; 
-	margin: auto;
-	justify-content:left;
-	width: 240px;
-	height: 240px;
-	padding: 10px;
+    width: 100%; /* Make images responsive */
+    height: auto;
 }
 
 p{
 	color: white;
-	font-size: 30px;
+	font-size: 40px;
 }
 
 }
@@ -275,17 +256,95 @@ a:active {
 	color: #2A322B; 
 }
 .kuva{
-	width: auto; 
-	margin: auto;
-	justify-content:left;
-	width: 240px;
-	height: 240px;
-	padding: 10px;
+    width: 100%; /* Make images responsive */
+    height: auto;
 }
 
 p{
 	color: white;
-	font-size: 30px;
+	font-size: 40px;
+}
+
+}
+
+
+@media screen and (max-width: 640px) {
+
+  .container {
+    grid-template-columns: 1fr; /* Single column layout */
+    text-align: center;
+  }
+
+  .kuva {
+    width: 100%; /* Make images responsive */
+    height: auto;
+  }
+
+  p {
+    color: white;
+	font-size: 20px;
+  }
+  
+    .boxleft {
+    width: 100%; /* Makes box take full width */
+    text-align: center;
+  }
+  
+  h1{
+	color: white;
+}
+
+ /* unvisited link */
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: #ADD8E6;
+}
+
+/* mouse over link */
+a:hover {
+  color: blue;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+} 
+
+.center{
+	text-align:center;
+	width: auto;
+	padding-left: 20px;
+}
+
+.linkright{
+
+	text-align:right;
+	width: auto;
+	padding-right: 20px;
+
+}
+
+.text {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+.laatikot{
+	margin: 10px;
+	border: solid;
+	color: #2A322B;
+	background-color: #2D4830;
+}
+
+.nimi{
+	margin: 10px;
+	border: solid;
+	color: #2A322B; 
 }
 
 }
